@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AMRAdapterYouappi'
-  s.version          = '5.0.0.2'
+  s.version          = '5.0.0.3'
   s.license          = { :type => 'Copyright', :text => <<-LICENSE
 														Copyright 2016
 														Admost Mediation Limited. 
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.documentation_url = 'https://admost.github.io/amrios/'
   s.platform 			= :ios
   s.ios.deployment_target = '9.0'
-  s.vendored_libraries = 'AMRAdapterYouappi/Libs/libAMRAdapterYouappi.a'
-  s.dependency 'AMRSDK', '~> 1.5.0'
+  s.vendored_frameworks = 'AMRAdapterYouappi/Libs/AMRAdapterYouappi.xcframework'
+  s.dependency 'AMRSDK', '~> 1.5.6'
   s.dependency 'YouAppiMoatSDK', '5.0.0'
 end
